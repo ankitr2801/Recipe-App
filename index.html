@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Recipe App</h1>
+        <form>
+          <input
+            type="text"
+            placeholder="Search for Recipes..."
+            class="searchBox"
+            required,
+          />
+          <button type="button" id="searchBtn">Search</button>
+          <label for="categoryFilter">Filter by Category:</label>
+          <select id="categoryFilter">
+            <option value="">All Categories</option>
+            <!-- Add options dynamically based on available categories -->
+          </select>
+        </form>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="recipe-container">
+          <h2>Search Your Favourites recipes...</h2>
+        </div>
+        <div class="recipe-details">
+          <button type="button" class="close-PopUp-button">
+            <i class="fa-sharp fa-solid fa-xmark"></i>
+          </button>
+          <div class="recipe-Details-content">
+            
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
